@@ -1,0 +1,14 @@
+{
+    "name": "ponishaenglish",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "sass": "node-sass main.scss style.css -w"
+    },
+    "author": "ali mahmoodi",
+    "license": "ISC",
+    "dependencies": {
+        "node-sass": "^4.13.1"
+    }
+}

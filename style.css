@@ -1,0 +1,87 @@
+@font-face {
+  src: url("font/Vazir-FD.woff");
+  font-family: Vazir-FD; }
+
+* {
+  font-family: "Vazir-FD"; }
+
+body {
+  direction: rtl; }
+
+.wrapper {
+  max-width: 90%;
+  display: block;
+  margin: 0 auto; }
+
+.way {
+  position: relative;
+  background-image: url("img/shape.svg");
+  height: 800px;
+  width: 100%;
+  background-repeat: no-repeat; }
+  .way__dash {
+    position: relative;
+    top: 30px; }
+  .way__items {
+    display: flex;
+    justify-content: center;
+    padding-top: 90px; }
+  .way__item {
+    display: flex;
+    position: relative; }
+  .way__item-container {
+    width: 117px; }
+  .way__item-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 40px;
+    background-color: white;
+    border: 10px solid rgba(31, 166, 168, 0.85);
+    background-repeat: no-repeat;
+    background-position: center; }
+    .way__item-logo--1 {
+      background-image: url("svg/logo1.svg"); }
+    .way__item-logo--2 {
+      background-image: url("svg/logo2.svg"); }
+    .way__item-logo--3 {
+      background-image: url("svg/logo3.svg"); }
+    .way__item-logo--4 {
+      background-image: url("svg/logo4.svg"); }
+  .way__item-text {
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+    color: white; }
+  .way__header-text {
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 25px; }
+  .way__books-header {
+    width: fit-content;
+    margin: 0 auto;
+    color: white;
+    font-size: 13px; }
+  .way__books-container {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .way__book-item {
+    width: 290px;
+    background-color: white;
+    margin: 8px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.3); }
+  .way__books-footer {
+    text-align: center;
+    color: white;
+    font-size: 13px; }
