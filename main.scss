@@ -1,3 +1,4 @@
+$primary-color: #1ca3a6;
 @font-face {
     src: url("font/Vazir-FD.woff");
     font-family: Vazir-FD;
@@ -9,14 +10,15 @@ body {
     direction: rtl;
 }
 .wrapper {
-    max-width: 90%;
+    max-width: 95%;
     display: block;
     margin: 0 auto;
 }
 .way {
     position: relative;
-    background-image: url("img/shape.svg");
-    height: 800px;
+    background-image: linear-gradient(to bottom, rgba(28, 163, 166, 0.95), rgba(28, 163, 166, 0.95)), url("img/laptop.jpg");
+    background-size: cover;
+    height: 700px;
     width: 100%;
     background-repeat: no-repeat;
     &__dash {
@@ -27,7 +29,7 @@ body {
     &__items {
         display: flex;
         justify-content: center;
-        padding-top: 90px;
+        padding-top: 130px;
     }
     &__item {
         display: flex;
@@ -41,7 +43,7 @@ body {
         height: 100px;
         border-radius: 40px;
         background-color: white;
-        border: 10px solid rgba($color: #1fa6a8, $alpha: 0.85);
+        border: 10px solid rgba($color: #1fa6a8, $alpha: 0.9);
         background-repeat: no-repeat;
         background-position: center;
         &--1 {
@@ -68,18 +70,19 @@ body {
         margin: 0 auto;
         text-align: center;
         position: relative;
-        top: 25px;
+        top: 45px;
     }
 
     &__books-header {
         width: fit-content;
+        width: -moz-fit-content;
         margin: 0 auto;
         color: white;
         font-size: 13px;
     }
     &__books-container {
         display: flex;
-        width: 70%;
+        width: 50%;
         margin: 0 auto;
         flex-wrap: wrap;
         justify-content: center;
@@ -92,14 +95,42 @@ body {
         margin: 8px;
         text-align: center;
         padding: 6px;
-        border-radius: 25px;
+        border-radius: 50px;
         text-transform: uppercase;
         font-size: 14px;
         box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.2);
+    }
+    &__books {
+        margin-top: 40px;
     }
     &__books-footer {
         text-align: center;
         color: white;
         font-size: 13px;
+    }
+
+    &::before {
+        display: block;
+        content: "";
+        background-image: url(svg/Asset1.svg);
+        width: 101%;
+        height: 150px;
+        position: absolute;
+        background-repeat: no-repeat;
+        top: -2px;
+        left: 50%;
+        // width: 1450px;
+        transform: translateX(-50%);
+    }
+    &::after {
+        display: block;
+        content: "";
+        background-image: url(svg/Asset2.svg);
+        width: 102%;
+        height: 150px;
+        position: absolute;
+        background-repeat: no-repeat;
+        bottom: -66px;
+        right: -2px;
     }
 }
